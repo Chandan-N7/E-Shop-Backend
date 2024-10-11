@@ -2,7 +2,7 @@ const { genSalt, hash, compare } = require("bcryptjs")
 const jwt = require("jsonwebtoken")
 const transporter = require("../Middleware/nodemailer.js");
 const generateOTP = require("../Middleware/otpMiddleware");
-const User = require("../Model/UserModle.js");
+const User = require("../Model/userModle.js");
 
 const maxAge = 30 * 24 * 60 * 60 * 1000; // 30 days in seconds
 
