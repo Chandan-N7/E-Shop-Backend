@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000 ;
 const db = process.env.DB;
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: [process.env.CLIENTSIDE_URL],
     credentials:true
 }));
 
