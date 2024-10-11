@@ -1,7 +1,7 @@
 const instance = require("../Middleware/paymentMiddleware.js");
 const crypto = require('crypto');
 const Order = require("../Model/paymentModel.js");
-const User = require("../Model/UserModle.js");
+const User = require("../Model/userModle.js");
 
 const checkOut = async (req, res) => {
     try {
